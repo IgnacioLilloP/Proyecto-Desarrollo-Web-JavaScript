@@ -405,7 +405,8 @@ h2 {
 
 .t18 {
     grid-area: 6 / 6 / 7 / 7;
-}
+
+
 
 /*Transicion portadas index*/
 .box {
@@ -415,7 +416,6 @@ h2 {
 .box:hover {
     transform: scale(1.1);
 }
-
 
 /*Animacion de fade en titulo al cargar la pagina */
 .fade {
@@ -456,4 +456,5 @@ h2 {
     100% {
         opacity: 1;
     }
+
 }
