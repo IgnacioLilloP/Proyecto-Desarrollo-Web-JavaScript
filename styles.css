@@ -158,35 +158,35 @@ h2 {
 
 .gridmanga1 {
     grid-area: 1 / 1 / 2 / 2;
-    border: 2px solid #5F7798;
+
     display: flex;
     justify-content: center;
 }
 
 .gridmanga2 {
     grid-area: 1 / 2 / 2 / 3;
-    border: 2px solid #5F7798;
+
     display: flex;
     justify-content: center;
 }
 
 .gridmanga3 {
     grid-area: 1 / 3 / 2 / 4;
-    border: 2px solid #5F7798;
+
     display: flex;
     justify-content: center;
 }
 
 .gridmanga4 {
     grid-area: 1 / 4 / 2 / 5;
-    border: 2px solid #5F7798;
+
     display: flex;
     justify-content: center;
 }
 
 .gridmanga5 {
     grid-area: 1 / 5 / 2 / 6;
-    border: 2px solid #5F7798;
+
     display: flex;
     justify-content: center;
 }
@@ -195,35 +195,35 @@ h2 {
     grid-area: 2 / 1 / 3 / 2;
     display: flex;
     justify-content: center;
-    border: 2px solid #5F7798;
+
 }
 
 .gridmanga7 {
     grid-area: 2 / 2 / 3 / 3;
     display: flex;
     justify-content: center;
-    border: 2px solid #5F7798;
+
 }
 
 .gridmanga8 {
     grid-area: 2 / 3 / 3 / 4;
     display: flex;
     justify-content: center;
-    border: 2px solid #5F7798;
+
 }
 
 .gridmanga9 {
     grid-area: 2 / 4 / 3 / 5;
     display: flex;
     justify-content: center;
-    border: 2px solid #5F7798;
+
 }
 
 .gridmanga10 {
     grid-area: 2 / 5 / 3 / 6;
     display: flex;
     justify-content: center;
-    border: 2px solid #5F7798;
+
 }
 
 /*Grid para Noticias*/
@@ -406,4 +406,28 @@ h2 {
 
 .t18 {
     grid-area: 6 / 6 / 7 / 7;
+}
+
+/*Transicion portadas index*/
+.box{
+    transition: all 1s;
+}
+.box:hover{
+    transform: scale(1.1);
+}
+
+
+/*Animacion de fade en titulo al cargar la pagina */
+.fade{
+    animation: fades 1s;
+}
+
+@keyframes fades{
+
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
