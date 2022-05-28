@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Ignacio Lillo Poblete</h1>
-<h3 align="center">I'm learning web design and basic programming</h3>
+<h3 align="center">I'm learning web design and programming</h3>
 
 - 🔭 I’m currently working [building a website](https://github.com/IgnacioLilloP/Proyecto-Desarrollo-Web)
 
