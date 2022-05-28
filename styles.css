@@ -406,29 +406,3 @@ h2 {
 .t18 {
     grid-area: 6 / 6 / 7 / 7;
 }
-
-/*Transicion portadas index*/
-.box {
-    transition: all 1s;
-}
-
-.box:hover {
-    transform: scale(1.1);
-}
-
-
-/*Animacion de fade en titulo al cargar la pagina */
-.fade {
-    animation: fades 1s;
-}
-
-@keyframes fades {
-
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
