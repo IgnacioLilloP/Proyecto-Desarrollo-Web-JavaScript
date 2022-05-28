@@ -38,7 +38,6 @@ h2 {
     color: white;
     width: 30%;
     margin: 0 auto 2rem auto
-
 }
 
 .bg-navbar {
@@ -409,25 +408,27 @@ h2 {
 }
 
 /*Transicion portadas index*/
-.box{
+.box {
     transition: all 1s;
 }
-.box:hover{
+
+.box:hover {
     transform: scale(1.1);
 }
 
 
 /*Animacion de fade en titulo al cargar la pagina */
-.fade{
+.fade {
     animation: fades 1s;
 }
 
-@keyframes fades{
+@keyframes fades {
 
-    0%{
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
