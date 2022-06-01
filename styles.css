@@ -9,19 +9,9 @@
 }
 
 body {
-    background-image: url(images/subtle-prism.svg);
     background-size: cover;
     font-family: 'Roboto Slab', serif;
-}
-
-footer {
-    background-color: #5F7798;
-}
-
-footer ul li {
-    display: inline-block;
-    list-style-type: none;
-    padding: 10px;
+    background-color: #f5f1f1;
 }
 
 h1 {
@@ -31,46 +21,14 @@ h1 {
 
 }
 
-h2 {
-    background-color: #91A1BF;
-    border: 4px solid black;
-    padding: 1rem 3rem;
-    color: white;
-    width: 30%;
-    margin: 0 auto 2rem auto
+.title {
+    color: #3c3c3c;
+    font-size: 40px;
+    margin: 15px 0px 15px 40px
 }
 
-.bg-navbar {
-    background-color: #5f7798ea;
-    position: fixed;
-    width: 100%;
-    top: 0;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.menu ul li {
-    display: inline-block;
-    list-style-type: none;
-    text-align: left;
-}
-
-.menu ul li a {
-    font-size: 18px;
-    padding: 30px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-}
-
-.novedades {
-    width: 30%;
-    margin: auto;
-    margin-bottom: 2rem;
+.navbartext {
+    font-size: 20px;
 }
 
 .centrar {
@@ -81,28 +39,6 @@ h2 {
 .small-imagen {
     width: 80px;
     height: 80px;
-}
-
-.logos {
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-}
-
-.manga-sale {
-    display: inline-block;
-    list-style-type: none;
-}
-
-.manga-sale ul li {
-    display: inline-block;
-    list-style-type: none;
-}
-
-.manga-covers {
-    width: 320px;
-    height: 450px;
-    padding: 20px;
 }
 
 .texto-centrado {
@@ -127,14 +63,15 @@ h2 {
     margin-top: 50px;
 }
 
-.tittle {
-    display: flex;
-    justify-content: left;
-    font-size: 2em;
+.tittlestore {
+    color: #3c3c3c;
+    font-size: 40px;
+    margin: 40px 0px 30px 15px
 }
 
 .news-cover {
     width: 100%;
+    height: 100%;
 }
 
 .margin {
@@ -146,269 +83,9 @@ h2 {
     list-style: none;
 }
 
-/* Grid para index*/
-.parent-index {
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    grid-template-rows: auto auto;
-    grid-column-gap: 17px;
-    grid-row-gap: 10px;
-}
 
-.gridmanga1 {
-    grid-area: 1 / 1 / 2 / 2;
-
-    display: flex;
-    justify-content: center;
-}
-
-.gridmanga2 {
-    grid-area: 1 / 2 / 2 / 3;
-
-    display: flex;
-    justify-content: center;
-}
-
-.gridmanga3 {
-    grid-area: 1 / 3 / 2 / 4;
-
-    display: flex;
-    justify-content: center;
-}
-
-.gridmanga4 {
-    grid-area: 1 / 4 / 2 / 5;
-
-    display: flex;
-    justify-content: center;
-}
-
-.gridmanga5 {
-    grid-area: 1 / 5 / 2 / 6;
-
-    display: flex;
-    justify-content: center;
-}
-
-.gridmanga6 {
-    grid-area: 2 / 1 / 3 / 2;
-    display: flex;
-    justify-content: center;
-
-}
-
-.gridmanga7 {
-    grid-area: 2 / 2 / 3 / 3;
-    display: flex;
-    justify-content: center;
-
-}
-
-.gridmanga8 {
-    grid-area: 2 / 3 / 3 / 4;
-    display: flex;
-    justify-content: center;
-
-}
-
-.gridmanga9 {
-    grid-area: 2 / 4 / 3 / 5;
-    display: flex;
-    justify-content: center;
-
-}
-
-.gridmanga10 {
-    grid-area: 2 / 5 / 3 / 6;
-    display: flex;
-    justify-content: center;
-
-}
-
-/*Grid para Noticias*/
-.parent {
-    display: grid;
-    grid-template-columns: 0.5fr repeat(2, 1fr) 0.5fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
-}
-
-
-.div1 {
-    grid-area: 1 / 2 / 2 / 3;
-}
-
-.div2 {
-    grid-area: 1 / 3 / 3 / 3;
-}
-
-.div3 {
-    grid-area: 3 / 2 / 4 / 3;
-}
-
-.div4 {
-    grid-area: 2 / 2 / 2 / 3;
-}
-
-.div5 {
-    grid-area: 2 / 3 / 3 / 4;
-}
-
-.div6 {
-    grid-area: 3 / 3 / 4 / 4;
-}
-
-/*Grid Nosotros*/
-.parent-feedback {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr 2fr;
-    grid-template-rows: repeat(2, auto);
-    grid-column-gap: 2px;
-    grid-row-gap: 10px;
-}
-
-.feedback1 {
-    grid-area: 1 / 1 / 2 / 2;
-    display: flex;
-    justify-content: center;
-}
-
-.feedback2 {
-    grid-area: 1 / 2 / 2 / 3;
-
-}
-
-.feedback3 {
-    grid-area: 1 / 3 / 2 / 4;
-    display: flex;
-    justify-content: center;
-}
-
-.feedback4 {
-    grid-area: 1 / 4 / 2 / 5;
-}
-
-.feedback5 {
-    grid-area: 2 / 1 / 3 / 2;
-    display: flex;
-    justify-content: center;
-}
-
-.feedback6 {
-    grid-area: 2 / 2 / 3 / 3;
-}
-
-.feedback7 {
-    grid-area: 2 / 3 / 3 / 4;
-    display: flex;
-    justify-content: center;
-}
-
-.feedback8 {
-    grid-area: 2 / 4 / 3 / 5;
-}
-
-/* Grid contacto*/
-.grid-contacto {
-    display: grid;
-    grid-template-columns: 0.5fr repeat(2, 1fr) 0.5fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-}
-
-.c1 {
-    grid-area: 1 / 2 / 2 / 3;
-}
-
-.c2 {
-    grid-area: 1 / 3 / 2 / 4;
-}
-
-/*Grid tienda*/
-.grid-tienda {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 0.3fr 1fr 0.3fr 1fr 0.3fr 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-}
-
-.t1 {
-    grid-area: 1 / 3 / 2 / 6;
-}
-
-.t2 {
-    grid-area: 2 / 2 / 3 / 3;
-}
-
-.t3 {
-    grid-area: 2 / 3 / 3 / 4;
-}
-
-.t4 {
-    grid-area: 2 / 4 / 3 / 5;
-}
-
-.t5 {
-    grid-area: 2 / 5 / 3 / 6;
-}
-
-.t6 {
-    grid-area: 2 / 6 / 3 / 7;
-}
-
-.t7 {
-    grid-area: 3 / 3 / 4 / 6;
-}
-
-.t8 {
-    grid-area: 4 / 2 / 5 / 3;
-}
-
-.t9 {
-    grid-area: 4 / 3 / 5 / 4;
-}
-
-.t10 {
-    grid-area: 4 / 4 / 5 / 5;
-}
-
-.t11 {
-    grid-area: 4 / 5 / 5 / 6;
-}
-
-.t12 {
-    grid-area: 4 / 6 / 5 / 7;
-}
-
-.t13 {
-    grid-area: 5 / 3 / 6 / 6;
-}
-
-.t14 {
-    grid-area: 6 / 2 / 7 / 3;
-}
-
-.t15 {
-    grid-area: 6 / 3 / 7 / 4;
-}
-
-.t16 {
-    grid-area: 6 / 4 / 7 / 5;
-}
-
-.t17 {
-    grid-area: 6 / 5 / 7 / 6;
-}
-
-.t18 {
-    grid-area: 6 / 6 / 7 / 7;
-}
-
-
-/*Transicion portadas index*/
+/* deshabilitadas por el momento */
+/*Transicion portadas index
 .box {
     transition: all 1s;
 }
@@ -417,7 +94,7 @@ h2 {
     transform: scale(1.1);
 }
 
-/*Animacion de fade en titulo al cargar la pagina */
+Animacion de fade en titulo al cargar la pagina 
 .fade {
     animation: fades 1s;
 }
@@ -432,7 +109,8 @@ h2 {
         opacity: 1;
     }
 }
-/*Transicion portadas index*/
+*/
+/*Transicion portadas index
 .box {
     transition: all 1s;
 }
@@ -440,9 +118,9 @@ h2 {
 .box:hover {
     transform: scale(1.1);
 }
+*/
 
-
-/*Animacion de fade en titulo al cargar la pagina */
+/*Animacion de fade en titulo al cargar la pagina 
 .fade {
     animation: fades 1s;
 }
@@ -457,4 +135,15 @@ h2 {
         opacity: 1;
     }
 
+}
+  */
+.card-img-top {
+    width: 100%;
+    height: 18vw;
+    object-fit: cover;
+}
+
+hr {
+    width: 50%;
+    margin: auto;
 }

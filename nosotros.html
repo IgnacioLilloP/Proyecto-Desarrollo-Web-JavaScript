@@ -5,118 +5,163 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- footer -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap">
-
 
     <title>One Manga | Nosotros</title>
+
 </head>
 
 <body>
-    <header class="bg-navbar" >
-        <nav class="menu">
-                <a href="index.html">
-                    <img class="small-imagen" src="images/pngegg.png" alt="logo one manga">
+    <header>
+        <nav class="navbar bg-navbar navbar-expand-lg fixed-top navbar-dark bg-dark navbartext">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/pngegg.png" alt="" width="55" height="55" class="d-inline-block align-text-top">
                 </a>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="tienda.html">Tienda</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Título o Autor..."
+                            aria-label="Search">
+                        <button class="btn btn-outline-success text-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
         </nav>
+
     </header>
 
-
     <h1 class="texto-centrado">One Manga</h1>
-    <h2 class="texto-centrado"> Nuestra Tienda</h2>
-    <div class="centrar">
-        <img src="https://images.squarespace-cdn.com/content/v1/571abd61e3214001fb3b9966/1531177259202-B2ANZICEQH1FBM5MHKIS/DSC_0427-edit2.jpg"
-            alt="Tienda de manga">
+    <h2 class="texto-centrado m-3 title"> Nuestra Tienda</h2>
+    <div class="container mb-8">
+        <div class="card-group ">
+            <div class="card m-2">
+                <img src="images/manga-store1.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card m-2">
+                <img src="images/manga-store3.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card m-2">
+                <img src="images/manga-store2.jpg" class="card-img-top" alt="...">
+            </div>
+        </div>
     </div>
     <br>
-    <h2 class="texto-centrado">Feedback</h2>
-    <div class="parent-feedback">
-        <div class="feedback1"><img class="foto-perfil" src="images/feedback1.png" alt="avatar de hombre"></div>
-        <div class="feedback2">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum doloremque pariatur in? Consectetur
-                repellat cupiditate ad doloribus, et ab at magni aliquam consequuntur asperiores sed corporis. Doloribus
-                non pariatur quia!
-                Molestias consequuntur voluptates sit dicta dolore quae alias a dolorum voluptatum quia minima, ex vero
-                veritatis quibusdam sunt quis debitis nam laborum totam unde vitae voluptatem necessitatibus doloremque.
-                Aut, illo!</p>
-        </div>
-
-        <div class="feedback3"><img class="foto-perfil" src="images/feedback2.png" alt="avatar de mujer"></div>
-        <div class="feedback4">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum doloremque pariatur in? Consectetur
-                repellat cupiditate ad doloribus, et ab at magni aliquam consequuntur asperiores sed corporis. Doloribus
-                non pariatur quia!
-                Molestias consequuntur voluptates sit dicta dolore quae alias a dolorum voluptatum quia minima, ex vero
-                veritatis quibusdam sunt quis debitis nam laborum totam unde vitae voluptatem necessitatibus doloremque.
-                Aut, illo!</p>
-        </div>
-
-        <div class="feedback5"> <img class="foto-perfil" src="images/feedback3.png" alt="avatar de mujer"></div>
-        <div class="feedback6">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem aut dolorem a magnam pariatur deserunt
-                aliquam, alias illum omnis harum odio quo ullam iusto nisi dolorum beatae facere! Corporis, explicabo?
-                Non error velit magnam illum impedit consequatur! Eius illum tempore impedit nobis eveniet minus facilis
-                pariatur quis libero deserunt veritatis possimus odio repudiandae delectus, quae temporibus ex rem
-                aliquam quam.
-                .</p>
-        </div>
-
-        <div class="feedback7"> <img class="foto-perfil" src="images/feedback4.png" alt="avatar mujer trabajadora">
-        </div>
-        <div class="feedback8">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt unde blanditiis beatae labore, tempore
-                sint maxime, culpa asperiores repellendus eligendi vero odio soluta, dolores vel quam! Adipisci ea animi
-                ratione?
-                Hic iste expedita praesentium delectus omnis, dolor inventore explicabo perferendis mollitia nostrum
-                quas veniam! Ea libero autem hic amet facilis, aut earum accusamus. Rem pariatur .</p>
-        </div>
-
-    </div>
-    <footer class="footer-right">
-        <section>
-
-            <div class="contacto-footer">
-
-                <div>Mail: OneManga@gmail.com</div>
-                <div>Dirección: Calle Falsa 123, Santiago, Region Metropolitana</div>
-                <div>Telefono: +5691112233</div>
-
+    <h2 class="texto-centrado title">Feedback</h2>
+    <div class="container">
+        <div class="row align-items-center mb-5 mt-5">
+            <div class="col-2"><img class="foto-perfil" src="images/feedback1.png" alt="avatar de hombre"></div>
+            <div class="col-4">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum doloremque pariatur in? Consectetur
+                    repellat cupiditate ad doloribus, et ab at magni aliquam consequuntur asperiores sed corporis.
+                    Doloribus
+                    non pariatur quia!
+                    Molestias consequuntur voluptates sit dicta dolore quae alias a dolorum voluptatum quia minima, ex
+                    vero
+                    veritatis quibusdam sunt quis debitis nam laborum totam unde vitae voluptatem necessitatibus
+                    doloremque.
+                    Aut, illo!</p>
             </div>
 
-        </section>
-        <nav>
-        <ul>
-            <li>
-                <a href="https://www.facebook.com"> <img class="logos" src="images/bxl-facebook-square.svg"
-                        alt="Facebook">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.Twitter.com"> <img class="logos" src="images/bxl-twitter.svg" alt="Twitter">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.Instagram.com"> <img class="logos" src="images/bxl-instagram-alt.svg"
-                        alt="Instagram">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.Whatsapp.com"> <img class="logos" src="images/bxl-whatsapp.svg" alt="Whatsapp">
-                </a>
-            </li>
 
-        </ul>
+            <div class="col-2"><img class="foto-perfil" src="images/feedback2.png" alt="avatar de mujer"></div>
+            <div class="col-4">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum doloremque pariatur in? Consectetur
+                    repellat cupiditate ad doloribus, et ab at magni aliquam consequuntur asperiores sed corporis.
+                    Doloribus
+                    non pariatur quia!
+                    Molestias consequuntur voluptates sit dicta dolore quae alias a dolorum voluptatum quia minima, ex
+                    vero
+                    veritatis quibusdam sunt quis debitis nam laborum totam unde vitae voluptatem necessitatibus
+                    doloremque.
+                    Aut, illo!</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-2 "> <img class="foto-perfil" src="images/feedback3.png" alt="avatar de mujer"></div>
+            <div class="col-4">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem aut dolorem a magnam pariatur
+                    deserunt
+                    aliquam, alias illum omnis harum odio quo ullam iusto nisi dolorum beatae facere! Corporis,
+                    explicabo?
+                    Non error velit magnam illum impedit consequatur! Eius illum tempore impedit nobis eveniet minus
+                    facilis
+                    pariatur quis libero deserunt veritatis possimus odio repudiandae delectus, quae temporibus ex rem
+                    aliquam quam.
+                    .</p>
+            </div>
 
-    </nav>
+            <div class="col-2"> <img class="foto-perfil" src="images/feedback4.png" alt="avatar mujer trabajadora">
+            </div>
+            <div class="col-4">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt unde blanditiis beatae labore,
+                    tempore
+                    sint maxime, culpa asperiores repellendus eligendi vero odio soluta, dolores vel quam! Adipisci ea
+                    animi
+                    ratione?
+                    Hic iste expedita praesentium delectus omnis, dolor inventore explicabo perferendis mollitia nostrum
+                    quas veniam! Ea libero autem hic amet facilis, aut earum accusamus. Rem pariatur .</p>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-center text-white mt-5">
+        <div class="container p-4 pb-0">
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
 
-</footer>
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+            </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            OneManga@gmail.com |
+            <a class="text-white" href="https://mdbootstrap.com/">Calle falsa 123, Santiago</a>
+        </div>
+    </footer>
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"> </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js">
+    </script>
 </body>
 
 </html>
