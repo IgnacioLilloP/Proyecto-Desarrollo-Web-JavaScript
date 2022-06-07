@@ -173,3 +173,8 @@ hr {
 .navbar-dark .navbar-toggler-icon {
     background-image: url("images/menu\ \(1\).svg");
 }
+
+.us{
+    width: 100%;
+    height: 100%;
+}
