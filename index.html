@@ -15,6 +15,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <title> One Manga </title>
 
@@ -62,8 +64,8 @@
     </header>
     <section class="container">
         <div class="row">
-            <h1 class="texto-centrado">One Manga</h1>
-            <div class="col-12">
+            <h1 class="texto-centrado fade">One Manga</h1>
+            <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="m-lg-4">
                     <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="true">
                         <div class="carousel-indicators">
@@ -98,97 +100,101 @@
                     </div>
                 </div>
             </div>
-            <hr>
+        </div>
+        <hr>
 
     </Section>
     <section>
-        <div class="container ">
-
-            <div class="row">
-                <h2 class="title"> Novedades</h2>
-
-            </div>
-        </div>
         <div class="container">
 
-            <div class="row justify-content-center gap-2 ">
-                <div class="card text-center p-0" style="width: 15rem;">
-                    <img src="images/index-1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Kaguya-sama</h5>
-                        <p class="card-text">Tomo N°23</p>
-                        <p class="card-text">$9.990 CLP</p>
-                        <a href="#" class="btn btn-dark center">Comprar</a>
-                    </div>
-                </div>
-
-                <div class="card text-center p-0" style="width: 15rem;">
-                    <img src="images/index-2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Vagabond</h5>
-                        <p class="card-text">Tomo N°25</p>
-                        <p class="card-text"> $6.990</p>
-                        <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                </div>
-
-                <div class="card text-center p-0" style="width: 15rem;">
-                    <img src="images/index-3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">One Piece</h5>
-                        <p class="card-text">Tomo N°100</p>
-                        <p class="card-text">11.990</p>
-                        <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                </div>
-
-
-                <div class="card text-center p-0" style="width: 15rem;">
-                    <img src="images/index-4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Jujutsu Kaisen</h5>
-                        <p class="card-text">Tomo N°11</p>
-                        <p class="card-text">8.990</p>
-                        <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                </div>
-
-                <div class="card text-center p-0" style="width: 15rem;">
-                    <img src="images/index-5.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Kimi ni Todoke</h5>
-                        <p class="card-text">Tomo N°30</p>
-                        <p class="card-text">9.990</p>
-                        <a href="#" class="btn btn-dark">Comprar</a>
-                    </div>
-                </div>
+            <div class="row">
+                <h2 class="col-lg-12 tittlestore"> Novedades </h2>
             </div>
         </div>
-    </section>
-    </div>
+        <div class="container ">
+            <div class="row d-flex justify-content-center texto-centrado gap-4">
+                <div class="col-lg col-md-5 col-sm-12">
+                    <div class="card p-0 manga-card h-100">
+                        <img src="images/index-1.jpg" class="card-img-top" alt="Tomo N°23 de Kaguya-sama" >
+                        <div class="card-body">
+                            <h5 class="card-title">Kaguya-sama</h5>
+                            <p class="card-text">Tomo N°23</p>
+                            <p class="card-text">$9.990 CLP</p>
+                            <a href="#" class="btn btn-dark">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg col-md-5 col-sm-12">
+                    <div class="card p-0 manga-card h-100">
+                        <img src="images/index-2.jpg" class="card-img-top" alt="Tomo N°25 de Vagabond ">
+                        <div class="card-body">
+                            <h5 class="card-title">Vagabond</h5>
+                            <p class="card-text">Tomo N°25</p>
+                            <p class="card-text"> $6.990</p>
+                            <a href="#" class="btn btn-dark">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg col-md-5 col-sm-12">
+                    <div class="card p-0 manga-card h-100">
+                        <img src="images/index-3.jpg" class="card-img-top " alt="Tomo N°100 de One Piece">
+                        <div class="card-body">
+                            <h5 class="card-title">One Piece</h5>
+                            <p class="card-text">Tomo N°100</p>
+                            <p class="card-text">$11.990</p>
+                            <a href="#" class="btn btn-dark">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg col-md-5 col-sm-12">
+                    <div class="card p-0 manga-card h-100">
+                        <img src="images/index-4.jpg" class="card-img-top" alt="Tomo N°11 de Jujutsu Kaisen">
+                        <div class="card-body">
+                            <h5 class="card-title">Jujutsu Kaisen</h5>
+                            <p class="card-text">Tomo N°11</p>
+                            <p class="card-text">$8.990</p>
+                            <a href="#" class="btn btn-dark">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg col-md-5 col-sm-12">
+                    <div class="card p-0 manga-card h-100">
+                        <img src="images/index-5.jpg" class="card-img-top" alt="Tomo N°30 de Kimi Ni Todoke">
+                        <div class="card-body">
+                            <h5 class="card-title">Kimi ni Todoke</h5>
+                            <p class="card-text">Tomo N°30</p>
+                            <p class="card-text">$9.990</p>
 
-    </div>
+                            <a href="#" class="btn btn-dark">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
     <footer class="bg-dark text-center text-white mt-5">
         <div class="container p-4 pb-0">
             <section class="mb-4">
                 <!-- Facebook -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button"><i
                         class="fab fa-facebook-f"></i></a>
 
                 <!-- Twitter -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button"><i
                         class="fab fa-twitter"></i></a>
 
                 <!-- Instagram -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"><i
                         class="fab fa-instagram"></i></a>
 
             </section>
         </div>
 
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            OneManga@gmail.com |
-            <a class="text-white" href="https://mdbootstrap.com/">Calle falsa 123, Santiago</a>
+        <div class="text-center p-3 footer-color">
+            OneManga@gmail.com | Calle falsa 123, Santiago</a>
         </div>
     </footer>
     <!-- javascript -->
