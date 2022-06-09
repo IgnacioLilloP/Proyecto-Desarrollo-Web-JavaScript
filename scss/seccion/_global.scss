@@ -1,0 +1,31 @@
+@import "seccion/colors";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-size: cover;
+    font-family: 'Roboto Slab', serif;
+    background-color: $fondo;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 100px;
+    padding-top: 100px;
+}
+
+hr {
+    width: 50%;
+    margin: auto;
+}

@@ -1,0 +1,35 @@
+.card-img-top {
+    width: 100%;
+    object-fit: contain;
+    height: 30vh;
+    margin-top: 20px;
+}
+
+.news-cover {
+    display: flex;
+    align-items: center;
+}
+
+.news {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+}
+
+.small-imagen {
+    width: 80px;
+    height: 80px;
+}
+
+.us {
+    width: 100%;
+    height: 100%;
+}
+
+.max-width {
+    max-width: 80%;
+}
