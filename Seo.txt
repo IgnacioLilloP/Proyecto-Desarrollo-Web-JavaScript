@@ -1,0 +1,27 @@
+H1 modificados en cada pagina
+Index: One Manga
+Tienda: Catálogo de Mangas
+Noticias:Noticias
+Nosotros:Nuestra Historia
+Contacto:¡Visitanos!
+
+H2 modificados en cada pagina
+Index: Recién llegados
+Tienda:Catálogo de Mangas
+Noticias:Actualidad sobre Manga y Anime
+Nosotros:Conoce nuestra tienda
+Contacto:Cómo llegar
+
+Meta descripcion:Tienda de manga física y online en Chile. Tenemos los mejores productos de anime, figuras de colección y libros de origen japonés. Envío gratis a todo Chile en compras sobre $50.000.
+
+Keywords: tienda de manga, comprar mangas, tienda online, manga online, tienda anime, anime chile, manga chile, Editorial Ivrea, donde comprar manga, spy x family, tokyo revengers, dragon ball, shingeki no kyojin, one piece, norma editorial, tienda otaku, libros japoneses, anime online">
+
+Open graph:
+title: One manga tienda de manga en Chile.
+url: http://onemanga.com/tienda.
+description:Súper promoción envío gratis a todo Chile en compras sobre $50.000.
+
+
+Se añadio descripcion "alt" a todas las imagenes
+
+Se convirtieron las todas las imagenes jpg a webp para mejor compresion y tiempos de carga

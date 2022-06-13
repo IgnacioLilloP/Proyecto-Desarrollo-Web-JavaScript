@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- Tab Photo  -->
+    <link rel="shortcut icon" href="images/pngegg.png">
     <!-- footer -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
@@ -16,16 +18,31 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
 
-    <title>One Manga | Nosotros</title>
+    <!-- SEO -->
+
+    <!-- meta descripcion  -->
+    <meta name="description"
+        content="Tienda de manga física y online en Chile. Tenemos los mejores productos de anime, figuras de colección y libros de origen japonés. Envío gratis a todo Chile en compras sobre $50.000. ">
+
+    <!-- keywords -->
+    <meta name="keywords"
+        content="tienda de manga, comprar mangas, tienda online, manga online, tienda anime, anime chile, manga chile, Editorial Ivrea, donde comprar manga, spy x family, tokyo revengers, dragon ball, shingeki no kyojin, one piece, norma editorial, tienda otaku, libros japoneses, anime online">
+    <!--Open graph -->
+    <meta property="og:title" content="One manga tienda de manga en Chile">
+    <meta property="og:url" content="http://onemanga.com/tienda">
+    <meta property="og:description" content="Súper promoción envío gratis a todo Chile en compras sobre $50.000.">
+
+    <title>One Manga - Nosotros - La mejor tienda de manga en Chile</title>
 
 </head>
 
 <body>
     <header>
-        <nav class="navbar bg-navbar navbar-expand-lg fixed-top navbar-dark bg-dark navbartext">
+        <nav class="navbar navcolor bg-navbar navbar-expand-lg fixed-top navbar-dark bg-dark navbartext">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="images/pngegg.png" alt="" width="55" height="55" class="d-inline-block align-text-top">
+                    <img src="images/pngegg.png" alt="logo de one manga" width="55" height="55"
+                        class="d-inline-block align-text-top">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
@@ -53,7 +70,8 @@
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Título o Autor..."
                             aria-label="Search">
-                        <button class="btn btn-outline-success text-light" type="submit">Buscar</button>
+                        <button class="btn btn-outline-success text-light btnfont botonsearch"
+                            type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
@@ -61,18 +79,38 @@
 
     </header>
 
-    <h1 class="texto-centrado fade">One Manga</h1>
-    <h2 class="texto-centrado m-3 title"> Nuestra Tienda</h2>
+    <h1 class="texto-centrado fade">Quiénes somos</h1>
+    <h2 class="texto-centrado m-3 title"> Conoce nuestra tienda</h2>
     <div class="container mb-8">
-        <div class="card-group ">
-            <div class="card m-2">
-                <img src="images/manga-store1.jpg" class="us" alt="...">
-            </div>
-            <div class="card m-2">
-                <img src="images/manga-store3.jpg" class="us" alt="...">
-            </div>
-            <div class="card m-2">
-                <img src="images/manga-store2.jpg" class="us" alt="...">
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4 news-cover">
+                    <img src="images/manga-store2.webp" class="img-fluid news text-center m-2"
+                        alt="foto de la tienda one manga">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title newstitle"> Nuestro origen y filosofía</h5>
+                        <p class="card-text newstext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+                            sit facilis consequuntur molestias, ducimus amet reiciendis a doloribus eos cumque nam
+                            inventore laborum aut sunt, minima rerum dicta quaerat hic!
+                            Quod unde, corporis aut nemo accusantium soluta sunt libero labore repellendus, quia itaque
+                            sed quasi? Laudantium labore impedit similique optio ratione obcaecati esse adipisci aliquid
+                            hic recusandae. Ut, quis veritatis?
+                            <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, consequuntur eveniet nihil
+                            possimus cupiditate laboriosam incidunt perferendis ex voluptas ipsa, molestias inventore
+                            quos harum
+                            <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis accusamus molestias, minus
+                            laudantium aliquam voluptatibus beatae vero? Natus, ipsam. Neque reiciendis commodi dolore
+                            asperiores quaerat sint, maiores est dicta.
+
+
+                        </p>
+                        <p class="card-text"><small class="text-muted">Foto tomada el 11-05-2022</small></p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -80,8 +118,8 @@
     <h2 class="texto-centrado title">Feedback</h2>
     <div class="container">
         <div class="row align-items-center mb-5 mt-5">
-            <div class="col-lg-2 col-sm-12">
-                <img class="foto-perfil " src="images/feedback1.png" alt="avatar de hombre">
+            <div class="col-lg-2 col-sm-12 centrar">
+                <img class="foto-perfil" src="images/feedback1.png" alt="avatar de hombre con cabello corto">
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum doloremque pariatur in? Consectetur
@@ -96,8 +134,8 @@
             </div>
 
 
-            <div class="col-lg-2">
-                <img class="foto-perfil" src="images/feedback2.png" alt="avatar de mujer">
+            <div class="col-lg-2 col-sm-12 centrar">
+                <img class="foto-perfil" src="images/feedback2.png" alt="avatar de mujer joven">
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum doloremque pariatur in? Consectetur
@@ -114,8 +152,8 @@
     </div>
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-2 col-md-12 col-sm-12">
-                <img class="foto-perfil" src="images/feedback3.png" alt="avatar de mujer">
+            <div class="col-lg-2 col-md-12 col-sm-12 centrar">
+                <img class="foto-perfil" src="images/feedback3.png" alt="avatar de mujer mayor">
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem aut dolorem a magnam pariatur
@@ -129,7 +167,7 @@
                     .</p>
             </div>
 
-            <div class="col-lg-2 col-md-12 col-sm-12">
+            <div class="col-lg-2 col-md-12 col-sm-12 centrar">
                 <img class="foto-perfil" src="images/feedback4.png" alt="avatar mujer trabajadora">
             </div>
             <div class="col-lg-4 col-md-12 col-sm-12">
@@ -143,7 +181,7 @@
             </div>
         </div>
     </div>
-    <footer class="text-center text-white mt-5 footer-2">
+    <footer class="text-center text-white mt-5 footer-color">
         <div class="container p-4 pb-0">
             <section class="mb-4">
                 <!-- Facebook -->
@@ -160,7 +198,8 @@
 
             </section>
         </div>
-        <div class="text-center p-3 footer-color">
+        <hr>
+        <div class="text-center p-3">
             <p>OneManga@gmail.com | Calle falsa 123, Santiago</p>
         </div>
     </footer>
