@@ -29,3 +29,8 @@ hr {
     margin: auto;
 }
 
+@media screen and (max-width: 768px) {
+    h1{
+        font-size:80px;
+    }
+}
