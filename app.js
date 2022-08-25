@@ -13,8 +13,6 @@ let carrito = {}
 document.getElementById("comprar").onclick = function () {
     location.href="carrito.html";
 };
-// Eventos
-// El evento DOMContentLoaded es disparado cuando el documento HTML ha sido completamente cargado y parseado
 document.addEventListener('DOMContentLoaded', e => {
     fetchData()
     if (localStorage.getItem('carrito')) {
@@ -29,17 +27,16 @@ items.addEventListener('click', e => {
     btnAumentarDisminuir(e)
 })
 
-// Traer productos
+// api
 const fetchData = async () => {
     const res = await fetch('api.json');
     const data = await res.json()
-    // console.log(data)
     pintarCards(data)
 }
 
 
 
-// Pintar productos
+// Render Card
 const pintarCards = data => {
     data.forEach(item => {
         templateCard.querySelector('img').src = item.imagen
@@ -58,15 +55,12 @@ console.log(items)
 // Agregar al carrito
 const addCarrito = e => {
     if (e.target.classList.contains('btn-dark')) {
-        // console.log(e.target.dataset.id)
-        // console.log(e.target.parentElement)
         setCarrito(e.target.parentElement)
     }
     e.stopPropagation()
 }
 
 const setCarrito = item => {
-    // console.log(item)
     const producto = {
         nombre: item.querySelector('h5').textContent,
         precio: item.querySelector('span').textContent,
@@ -86,6 +80,8 @@ const setCarrito = item => {
     pintarCarrito()
 }
 
+
+// render carrito
 const pintarCarrito = () => {
     items.innerHTML = ''
 
@@ -127,7 +123,6 @@ const pintarFooter = () => {
         cantidad,
         precio
     }) => acc + cantidad * precio, 0)
-    // console.log(nPrecio)
 
     templateFooter.querySelectorAll('td')[0].textContent = nCantidad
     templateFooter.querySelector('span').textContent = nPrecio
@@ -149,7 +144,6 @@ const pintarFooter = () => {
 
   
 const btnAumentarDisminuir = e => {
-    // console.log(e.target.classList.contains('btn-info'))
     if (e.target.classList.contains('btn-aumentar')) {
         const producto = carrito[e.target.dataset.id]
         producto.cantidad++
