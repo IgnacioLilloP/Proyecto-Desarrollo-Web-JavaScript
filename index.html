@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <!-- Tab Photo  -->
@@ -37,7 +38,7 @@
     <title>One Manga - Home - La mejor tienda de manga en Chile</title>
 </head>
 
-<body>
+<body class="theme">
     <header>
         <nav class="navbar navcolor bg-navbar navbar-expand-lg fixed-top navbar-dark navbartext">
             <div class="container-fluid">
@@ -47,7 +48,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"> <img src="images/toggler.svg" alt=""></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -67,6 +68,20 @@
                             <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
+
+
+                    <ul class="navbar-nav d-flex flex-row me-2">
+                        <li class="nav-item me-3 me-lg-0 align-content-center centrar ">
+                            <a class="navbar-brand type= "button data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" >
+                                <img src="images/shopping-basket-xxl.png" alt="Carrito de compras" class=" cartimg d-inline-block align-text-top" />
+                                <p id="contador" class="me-2"> 0 </p>
+                                <p id="compraTotal"></p>
+                            </a>  
+                        </li>
+                      </ul>
+                      
+
+
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Título o Autor..."
                             aria-label="Search" />
@@ -77,10 +92,82 @@
                 </div>
             </div>
         </nav>
+        
     </header>
+
+    <!-- CARRITO DE COMPRAS -->
+    <section>
+        <div class="offcanvas widthcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+            </div>
+            <button type="button" class="btn-close btn-cerrar" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+            <div class="offcanvas-body">
+                <div class="container">
+                    <h4 class="text-center mb-5">Carrito de compras</h4>
+                    <table class="table contenedor">
+                      <thead>
+                        <tr class="text-center fontcarrito">
+                          <th scope="col" >#</th>
+                          <th scope="col">Item</th>
+                          <th scope="col">Cantidad</th>
+                          <th scope="col">Total</th>
+                        </tr>
+                      </thead>
+                      <tbody id="items">
+                        <template id="template-carrito">
+                            <tr class="text-center align-middle fontcarrito">
+                              <th scope="row"> <img src="images/index-5.webp" id="portadaCarrito" class="img-carrito" />
+                              </th>
+                              <td class="">Café</td>
+                              <div class="">
+                              <td class="p-0 carrito-centrado">
+                                <button><img class="btn-disminuir" src="images/bx-minus-circle.svg" alt=""> </button>
+                              <span>1</span>  
+                              <button > <img class="btn-aumentar" src="images/bx-plus-circle.svg" alt=""> </button>
+                            </td>
+                        </div>
+                              <td class="p-0">$<span>500</span></td>
+                       
+                            </tr>
+                          </template>
+                      </tbody>
+                      <tfoot>
+                        <tr id="footer">
+                            <template id="template-footer" >
+                                <th scope="row" colspan="2" class=" fontcarrito">Total productos</th>
+                                <td class="text-center fontcarrito">10</td>
+                                <td class="font-weight-bold fontcarrito">$<span>5000</span></td>
+                            </table>
+                            </template>
+                          <th scope="row" colspan="5" class="text-center fontcarrito">Carrito vacío!</th>
+                        </tr>
+                      </tfoot>
+                      
+                    </table>
+                    <div class="centrar">
+        
+                        <button class="btn btn-carrito-vaciar btn-sm m-4" id="vaciar-carrito">
+                            Vaciar Carrito
+                        </button>
+                        <button id="comprar"  class="btn btn-carrito-compra btn-sm m-4">
+                            Iniciar Compra
+                        </button>
+               </div>
+                  </div>
+          </div>
+          </div>
+
+        
+          
+</section>
+
+<!-- Carrusel -->
     <section class="container">
+        
         <div class="row">
-            <h1 class="texto-centrado fade">One Manga</h1>
+            <h1 class="texto-centrado fades">One Manga</h1>            
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="m-lg-4">
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
@@ -131,66 +218,30 @@
             </div>
         </div>
         <div class="container">
-            <div class="row d-flex justify-content-center texto-centrado gap-4">
+            <div class="row d-flex justify-content-center texto-centrado gap-4" id="cards"></div>
+            <template id="template-card">
                 <div class="col-lg col-md-5 col-sm-12">
-                    <div class="card p-0 manga-card h-100">
-                        <img src="images/index-1.webp" class="card-img-top" alt="Tomo N°23 de Kaguya-sama" />
-                        <div class="card-body">
-                            <h5 class="card-title">Kaguya-sama</h5>
-                            <p class="card-text">Tomo N°23</p>
-                            <p class="card-text">$9.990 CLP</p>
-                            <a href="#" class="btn btn-dark btnfont">Comprar</a>
-                        </div>
+                  <div class="card p-0 manga-card h-100">
+                    <img src="" id="portada" class="card-img-top" alt="Tomo N°30 de Kimi Ni Todoke" />
+                    <div class="card-body">
+                        <h5 class="card-title">Kimi ni Todoke</h5>
+                        <p class="card-text">Tomo N°30</p>
+                        <p id="precio" class="card-text">$<span>9.990</span> </p>
+                      <button class="btn btn-dark btnfont">Comprar</button>
                     </div>
+                  </div>
                 </div>
-                <div class="col-lg col-md-5 col-sm-12">
-                    <div class="card p-0 manga-card h-100">
-                        <img src="images/index-2.webp" class="card-img-top" alt="Tomo N°25 de Vagabond " />
-                        <div class="card-body">
-                            <h5 class="card-title">Vagabond</h5>
-                            <p class="card-text">Tomo N°25</p>
-                            <p class="card-text">$6.990</p>
-                            <a href="#" class="btn btn-dark btnfont">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg col-md-5 col-sm-12">
-                    <div class="card p-0 manga-card h-100">
-                        <img src="images/index-3.webp" class="card-img-top" alt="Tomo N°100 de One Piece" />
-                        <div class="card-body">
-                            <h5 class="card-title">One Piece</h5>
-                            <p class="card-text">Tomo N°100</p>
-                            <p class="card-text">$11.990</p>
-                            <a href="#" class="btn btn-dark btnfont">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg col-md-5 col-sm-12">
-                    <div class="card p-0 manga-card h-100">
-                        <img src="images/index-4.webp" class="card-img-top" alt="Tomo N°11 de Jujutsu Kaisen" />
-                        <div class="card-body">
-                            <h5 class="card-title">Jujutsu Kaisen</h5>
-                            <p class="card-text">Tomo N°11</p>
-                            <p class="card-text">$8.990</p>
-                            <a href="#" class="btn btn-dark btnfont">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg col-md-5 col-sm-12">
-                    <div class="card p-0 manga-card h-100">
-                        <img src="images/index-5.webp" class="card-img-top" alt="Tomo N°30 de Kimi Ni Todoke" />
-                        <div class="card-body">
-                            <h5 class="card-title">Kimi ni Todoke</h5>
-                            <p class="card-text">Tomo N°30</p>
-                            <p class="card-text">$9.990</p>
-
-                            <a href="#" class="btn btn-dark btnfont">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+              </template>
         </div>
     </section>
+    
+
+
+    
+
+
+
+
 
     <footer class="text-center text-white mt-5 footer-color">
         <div class="container p-4 pb-0">
@@ -214,8 +265,10 @@
         </div>
     </footer>
     <!-- javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>

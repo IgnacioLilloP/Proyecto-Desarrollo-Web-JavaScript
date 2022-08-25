@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "nombre": "Kaguya-sama",
+        "tomo" : "Tomo N°23",
+        "precio": 9.990,
+        "imagen" : "images/index-1.webp"
+    },
+    {
+        "id": 2,
+        "nombre": "Vagabond",
+        "tomo" : "Tomo N°25",
+        "precio": 6.990,
+        "imagen": "images/index-2.webp"
+    },
+    {
+        "id": 3,
+        "nombre": "One Piece",
+        "tomo" : "Tomo N°100",
+        "precio": 11.990,
+        "imagen":"images/index-3.webp"
+    },
+    {
+        "id": 4,
+        "nombre": "Jujutsu Kaisen",
+        "tomo" : "Tomo N°11",
+        "precio": 8.990,
+        "imagen": "images/index-4.webp"
+    },
+    {
+        "id": 5,
+        "nombre": "Kimi ni Todoke",
+        "tomo" : "Tomo N°30",
+        "precio": 9.990,
+        "imagen": "images/index-5.webp"
+    }
+  ]

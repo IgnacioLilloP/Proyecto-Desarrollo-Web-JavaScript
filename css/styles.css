@@ -32,6 +32,11 @@ body {
 p {
   font-weight: 400; }
 
+button{
+    border: transparent;
+    background-color: transparent;
+  }  
+
 .newstitle {
   font-weight: 500; }
 
@@ -168,9 +173,10 @@ p {
   .box:hover {
     transform: scale(1.1); }
 
-.fade {
+.fades {
   animation: fades 1s;
   animation-fill-mode: forwards; }
+
 
 @keyframes fades {
   0% {
@@ -193,4 +199,86 @@ p {
 
 .disclaimer{
   display: none !important;
+}
+
+.dark{ 
+  background-color: lightsteelblue;
+}
+
+
+
+#itemCounter{
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.cartimg{
+  width: 40px;
+  height: 40px;
+}
+
+
+.img-carrito{
+  width: 90px;
+  height: 130px;
+}
+.widthcanvas{
+  width:  500px !important;
+}
+
+.btn-aumentar{
+  width: 25px;
+  height: 25px;
+
+
+}
+
+.btn-disminuir{
+
+  width: 25px;
+  height: 25px;
+}
+
+
+.offcanvas-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+} 
+
+.offcanvas-backdrop.show {
+  opacity: 0.1;
+}
+
+.btn-cerrar{
+  margin: -20px 0 0 10px;
+}
+
+.btn-carrito-compra{
+  width: 150px;
+  height: 40px;
+  background-color: black;
+  color: white;
+}
+.btn-carrito-vaciar{
+  width: 150px;
+  height: 40px;
+  background-color: #aa8846;
+    color: white;
+
+}
+
+.padre{
+ margin-bottom: 50%;
+}
+
+a{
+  color: white;
+}
+
+.fontcarrito{
+  font-size: 16px;
 }
