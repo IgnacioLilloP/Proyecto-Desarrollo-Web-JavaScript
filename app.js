@@ -13,6 +13,7 @@ let carrito = {}
 document.getElementById("comprar").onclick = function () {
     location.href="carrito.html";
 };
+
 document.addEventListener('DOMContentLoaded', e => {
     fetchData()
     if (localStorage.getItem('carrito')) {
@@ -38,37 +39,59 @@ const fetchData = async () => {
 
 // Render Card
 const pintarCards = data => {
+
     data.forEach(item => {
-        templateCard.querySelector('img').src = item.imagen
         templateCard.querySelector('h5').textContent = item.nombre
         templateCard.querySelector('p').textContent = item.tomo
-        templateCard.querySelector('span').textContent = item.precio
-
+        templateCard.querySelector('span').textContent = new Intl.NumberFormat('es-AR').format(item.precio)
+        templateCard.querySelector('img').src= item.imagen
         templateCard.querySelector('button').dataset.id = item.id
         const clone = templateCard.cloneNode(true)
         fragment.appendChild(clone)
     })
     cards.appendChild(fragment)
+
+    console.log(data)
 }
-console.log(items)
+
 
 // Agregar al carrito
 const addCarrito = e => {
     if (e.target.classList.contains('btn-dark')) {
         setCarrito(e.target.parentElement)
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 2000,
+            didOpen: (toast) => {
+              toast.addEventListener('mouseenter', Swal.stopTimer)
+              toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+          })
+          
+          Toast.fire({
+            icon: 'success',
+            title: 'Item añadido al carrito '
+          })
     }
     e.stopPropagation()
+
 }
 
 const setCarrito = item => {
     const producto = {
         nombre: item.querySelector('h5').textContent,
-        precio: item.querySelector('span').textContent,
+        precio: item.querySelector('span').textContent ,
         id: item.querySelector('button').dataset.id,
         cantidad: 1,
         tomo: item.querySelector('p').textContent,
-    }
+        imagen: item.querySelector('img').src
+        }
+        
     console.log(producto)
+
+
     if (carrito.hasOwnProperty(producto.id)) {
         producto.cantidad = carrito[producto.id].cantidad + 1
     }
@@ -86,10 +109,10 @@ const pintarCarrito = () => {
     items.innerHTML = ''
 
     Object.values(carrito).forEach(producto => {
+        templateCarrito.querySelector('img').src = producto.imagen
         templateCarrito.querySelectorAll('td')[0].textContent = producto.nombre + "\n//\n" + producto.tomo
         templateCarrito.querySelectorAll('span')[0].textContent = producto.cantidad
-        templateCarrito.querySelectorAll('span')[1].textContent = producto.precio * producto.cantidad
-        templateCarrito.querySelector('img').src = producto.imagen
+        templateCarrito.querySelectorAll('span')[1].textContent =producto.precio* producto.cantidad
 
         //botones
         templateCarrito.querySelector('.btn-aumentar').dataset.id = producto.id
@@ -124,6 +147,8 @@ const pintarFooter = () => {
         precio
     }) => acc + cantidad * precio, 0)
 
+
+
     templateFooter.querySelectorAll('td')[0].textContent = nCantidad
     templateFooter.querySelector('span').textContent = nPrecio
     document.getElementById('contador').textContent = nCantidad
@@ -132,6 +157,8 @@ const pintarFooter = () => {
     fragment.appendChild(clone)
 
     footer.appendChild(fragment)
+
+
 
     const boton = document.querySelector('#vaciar-carrito')
     boton.addEventListener('click', () => {
@@ -142,7 +169,7 @@ const pintarFooter = () => {
 
 }
 
-  
+
 const btnAumentarDisminuir = e => {
     if (e.target.classList.contains('btn-aumentar')) {
         const producto = carrito[e.target.dataset.id]
@@ -167,3 +194,4 @@ const btnAumentarDisminuir = e => {
     }
     e.stopPropagation()
 }
+
