@@ -74,7 +74,9 @@ const addCarrito = e => {
             icon: 'success',
             title: 'Item añadido al carrito '
           })
+          
     }
+
     e.stopPropagation()
 
 }
@@ -195,3 +197,9 @@ const btnAumentarDisminuir = e => {
     e.stopPropagation()
 }
 
+
+function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+  

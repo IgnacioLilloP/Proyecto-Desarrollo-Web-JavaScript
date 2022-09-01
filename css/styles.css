@@ -185,7 +185,9 @@ button{
     opacity: 1; } }
 
 .footer-color {
-  background: linear-gradient(to top, #343a41 0%, #666699 100%); }
+  background: linear-gradient(to top, #343a41 0%, #666699 100%);
+  isolation: isolate;
+ }
 
 .contacto-footer {
   color: #f8f3f1e0;
@@ -281,4 +283,28 @@ a{
 
 .fontcarrito{
   font-size: 16px;
+}
+
+
+.darkmode--activated h1{
+  color: rgb(246, 245, 245);
+}
+
+.darkmode--activated h2{
+  color: rgb(1, 1, 1);
+}
+
+.darkmode-toggle   { 
+  background: #100f2c;
+  position: fixed;
+  border-radius: 50%;
+  border: none;
+  right: 32px;
+  bottom: 32px;
+  left: unset;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
