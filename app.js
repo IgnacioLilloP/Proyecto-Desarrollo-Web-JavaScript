@@ -28,7 +28,8 @@ items.addEventListener('click', e => {
     btnAumentarDisminuir(e)
 })
 
-// api
+
+// API
 const fetchData = async () => {
     const res = await fetch('api.json');
     const data = await res.json()
@@ -114,7 +115,7 @@ const pintarCarrito = () => {
         templateCarrito.querySelector('img').src = producto.imagen
         templateCarrito.querySelectorAll('td')[0].textContent = producto.nombre + "\n//\n" + producto.tomo
         templateCarrito.querySelectorAll('span')[0].textContent = producto.cantidad
-        templateCarrito.querySelectorAll('span')[1].textContent =producto.precio* producto.cantidad
+        templateCarrito.querySelectorAll('span')[1].textContent = producto.precio*producto.cantidad
 
         //botones
         templateCarrito.querySelector('.btn-aumentar').dataset.id = producto.id
@@ -198,8 +199,3 @@ const btnAumentarDisminuir = e => {
 }
 
 
-function addDarkmodeWidget() {
-    new Darkmode().showWidget();
-  }
-  window.addEventListener('load', addDarkmodeWidget);
-  
