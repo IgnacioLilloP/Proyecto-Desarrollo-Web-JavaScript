@@ -3,7 +3,7 @@
 
 - 🔭 I’m currently working [building a website](https://github.com/IgnacioLilloP/Proyecto-Desarrollo-Web)
 
-- 🌱 I’m currently learning **HTML5 and Python**
+- 🌱 I’m currently learning **JavaScript**
 
 - 📫 How to reach me **ignacio.lillo.p@gmail.com**
 
