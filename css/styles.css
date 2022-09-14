@@ -11,12 +11,14 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   background-size: cover;
-  background-color: #f5f1f1; }
+  background-color: #faf8f8; }
 
 h1 {
   font-weight: bold;
   font-size: 95px;
-  padding-top: 100px; }
+  padding-top: 100px; 
+color: #222121;
+}
 
 hr {
   width: 50%;
@@ -46,19 +48,16 @@ button{
 .btnfont {
   font-weight: 400; }
 
-.navbar-dark .navbar-toggler-icon {
-  background-image: url(/images/toggler.svg); }
-
 .navbartext {
   font-size: 20px;
   color: #f8f3f1e0; }
 
 .navcolor {
   background: linear-gradient(to bottom, #343a41 0%, #666699 100%);
-  color: #f8f3f1e0; }
+  color: #faf8f7f4; }
 
 .title {
-  color: #3c3c3c;
+  color: #1f1f1f;
   font-size: 40px;
   margin: 15px 0px 15px 40px; }
 
@@ -70,7 +69,7 @@ button{
   text-align: center; }
 
 .tittlestore {
-  color: #3c3c3c;
+  color: #181717;
   font-size: 40px;
   margin: 40px 0px 30px 15px; }
 
@@ -207,8 +206,6 @@ button{
   background-color: lightsteelblue;
 }
 
-
-
 #itemCounter{
   font-size: 20px;
   margin-right: 20px;
@@ -225,7 +222,7 @@ button{
   height: 130px;
 }
 .widthcanvas{
-  width:  500px !important;
+  width:  550px !important;
 }
 
 .btn-aumentar{
@@ -285,26 +282,12 @@ a{
   font-size: 16px;
 }
 
+.imagencompra{
+width: 150px;
+height:70px ;}
 
-.darkmode--activated h1{
-  color: rgb(246, 245, 245);
-}
+.imagencompra2{
+  width: 140px;
+  height:70px ;}
 
-.darkmode--activated h2{
-  color: rgb(1, 1, 1);
-}
 
-.darkmode-toggle   { 
-  background: #100f2c;
-  position: fixed;
-  border-radius: 50%;
-  border: none;
-  right: 32px;
-  bottom: 32px;
-  left: unset;
-  cursor: pointer;
-  transition: all 0.5s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}

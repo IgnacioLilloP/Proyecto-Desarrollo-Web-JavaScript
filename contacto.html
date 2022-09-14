@@ -2,256 +2,333 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-    <!-- Tab Photo  -->
-    <link rel="shortcut icon" href="images/pngegg.png">
-    <!-- footer -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- Tab Photo  -->
+  <link rel="shortcut icon" href="images/pngegg.png">
+  <!-- footer -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
 
-    <!-- SEO -->
+  <!-- SEO -->
 
-    <!-- meta descripcion  -->
-    <meta name="description"
-        content="Tienda de manga física y online en Chile. Tenemos los mejores productos de anime, figuras de colección y libros de origen japonés. Envío gratis a todo Chile en compras sobre $50.000. ">
+  <!-- meta descripcion  -->
+  <meta name="description"
+    content="Tienda de manga física y online en Chile. Tenemos los mejores productos de anime, figuras de colección y libros de origen japonés. Envío gratis a todo Chile en compras sobre $50.000. ">
 
-    <!-- keywords -->
-    <meta name="keywords"
-        content="tienda de manga, comprar mangas, tienda online, manga online, tienda anime, anime chile, manga chile, Editorial Ivrea, donde comprar manga, spy x family, tokyo revengers, dragon ball, shingeki no kyojin, one piece, norma editorial, tienda otaku, libros japoneses, anime online">
-    <!--Open graph -->
-    <meta property="og:title" content="One manga tienda de manga en Chile">
-    <meta property="og:url" content="http://onemanga.com/tienda">
-    <meta property="og:description" content="Súper promoción envío gratis a todo Chile en compras sobre $50.000.">
+  <!-- keywords -->
+  <meta name="keywords"
+    content="tienda de manga, comprar mangas, tienda online, manga online, tienda anime, anime chile, manga chile, Editorial Ivrea, donde comprar manga, spy x family, tokyo revengers, dragon ball, shingeki no kyojin, one piece, norma editorial, tienda otaku, libros japoneses, anime online">
+  <!--Open graph -->
+  <meta property="og:title" content="One manga tienda de manga en Chile">
+  <meta property="og:url" content="http://onemanga.com/tienda">
+  <meta property="og:description" content="Súper promoción envío gratis a todo Chile en compras sobre $50.000.">
 
-    <title>One Manga - Contacto - La mejor tienda de manga en Chile</title>
+  <title>One Manga - Contacto - La mejor tienda de manga en Chile</title>
 
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navcolor bg-navbar navbar-expand-lg fixed-top navbar-dark bg-dark navbartext">
-            <div class="container-fluid">
-                <a class="navbar-brand logo" href="index.html">
-                    <img src="images/pngegg.png" alt="logo de one manga" class="d-inline-block align-text-top">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="index.html" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tienda.html">Tienda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="noticias.html">Noticias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav d-flex flex-row me-2">
-                        <li class="nav-item me-3 me-lg-0 align-content-center centrar ">
-                            <a class="navbar-brand type= "button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" >
-                                <img src="images/shopping-basket-xxl.png" alt="Carrito de compras" class=" cartimg d-inline-block align-text-top" onclick="clickCart()" />
-                                <p id="contador" class="me-2"> 0 </p>
-                                <p id="compraTotal"></p>
-                            </a>  
-                        </li>
-                      </ul>
-                      
+  <header>
+    <nav class="navbar navcolor bg-navbar navbar-expand-lg fixed-top navbar-dark bg-dark navbartext">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="index.html">
+          <img src="images/pngegg.png" alt="logo de one manga" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"> <img src="images/toggler.svg" alt=""></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="index.html" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="noticias.html">Noticias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav d-flex flex-row me-2">
+            <li class="nav-item me-3 me-lg-0 align-content-center centrar ">
+              <a class="navbar-brand type= " button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight">
+                <img src="images/shopping-basket-xxl.png" alt="Carrito de compras"
+                  class=" cartimg d-inline-block align-text-top" onclick="clickCart()" />
+                <p id="contador" class="me-2"> 0 </p>
+                <p id="compraTotal"></p>
+              </a>
+            </li>
+          </ul>
 
 
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Título o Autor..."
-                            aria-label="Search" />
-                        <button class="btn btn-outline-success text-light btnfont botonsearch" type="submit">
-                            Buscar
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-        
-    </header>
 
-    <!-- CARRITO DE COMPRAS -->
-    <section>
-        <div class="offcanvas widthcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
-            </div>
-            <button type="button" class="btn-close btn-cerrar" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Título o Autor..." aria-label="Search" />
+            <button class="btn btn-outline-success text-light btnfont botonsearch" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
 
-            <div class="offcanvas-body">
-                <div class="container">
-                    <h4 class="text-center mb-5">Carrito de compras</h4>
-                    <table class="table contenedor">
-                      <thead>
-                        <tr class="text-center fontcarrito">
-                          <th scope="col" >#</th>
-                          <th scope="col">Item</th>
-                          <th scope="col">Cantidad</th>
-                          <th scope="col">Total</th>
-                        </tr>
-                      </thead>
-                      <tbody id="items">
-                        <template id="template-carrito">
-                            <tr class="text-center align-middle fontcarrito">
-                              <th scope="row"> <img src="images/index-5.webp" id="portadaCarrito" class="img-carrito" />
-                              </th>
-                              <td class="">Café</td>
-                              <div class="">
-                              <td class="p-0 carrito-centrado">
-                                <button><img class="btn-disminuir" src="images/bx-minus-circle.svg" alt=""> </button>
-                              <span>1</span>  
-                              <button > <img class="btn-aumentar" src="images/bx-plus-circle.svg" alt=""> </button>
-                            </td>
-                        </div>
-                              <td class="p-0">$<span>500</span></td>
-                       
-                            </tr>
-                          </template>
-                      </tbody>
-                      <tfoot>
-                        <tr id="footer">
-                            <template id="template-footer" >
-                                <th scope="row" colspan="2" class=" fontcarrito">Total productos</th>
-                                <td class="text-center fontcarrito">10</td>
-                                <td class="font-weight-bold fontcarrito">$<span>5000</span></td>
-                            </table>
-                            </template>
-                          <th scope="row" colspan="5" class="text-center fontcarrito">Carrito vacío!</th>
-                        </tr>
-                      </tfoot>
-                      
-                    </table>
-                    <div class="centrar">
-        
-                        <button class="btn btn-carrito-vaciar btn-sm m-4" id="vaciar-carrito">
-                            Vaciar Carrito
-                        </button>
-                        <button id="comprar"  class="btn btn-carrito-compra btn-sm m-4">
-                            Iniciar Compra
-                        </button>
-               </div>
+  </header>
+
+  <!-- CARRITO DE COMPRAS -->
+  <section>
+
+    <div class="offcanvas widthcanvas offcanvas-end" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+      </div>
+      <button type="button" class="btn-close btn-cerrar" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+      <div class="offcanvas-body">
+        <div class="container">
+          <h4 class="text-center mb-5">Carrito de compras</h4>
+          <table class="table contenedor">
+            <thead>
+              <tr class="text-center fontcarrito">
+                <th scope="col">#</th>
+                <th scope="col">Item</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody id="items">
+              <template id="template-carrito">
+                <tr class="text-center align-middle fontcarrito">
+                  <th scope="row"> <img src="images/index-1.webp" id="portadaCarrito" class="img-carrito" />
+                  </th>
+                  <td class="">Café</td>
+                  <div class="">
+                    <td class="p-0 carrito-centrado">
+                      <button><img class="btn-disminuir" src="images/bx-minus-circle.svg" alt=""> </button>
+                      <span>1</span>
+                      <button> <img class="btn-aumentar" src="images/bx-plus-circle.svg" alt=""> </button>
+                    </td>
                   </div>
+                  <td class="p-0">$<span>500</span></td>
+
+                </tr>
+              </template>
+            </tbody>
+            <tfoot>
+              <tr id="footer">
+                <template id="template-footer">
+                  <th scope="row" colspan="2" class=" fontcarrito">Total productos</th>
+                  <td class="text-center fontcarrito">10</td>
+                  <td class="font-weight-bold fontcarrito">$<span>5000</span></td>
+          </table>
+          </template>
+          <th scope="row" colspan="5" class="text-center fontcarrito">Carrito vacío!</th>
+          </tr>
+          </tfoot>
+
+          </table>
+          <div class="centrar">
+
+            <button class="btn btn-carrito-vaciar btn-sm m-4" id="vaciar-carrito">
+              Vaciar Carrito
+            </button>
+            <button id="comprar" class="btn btn-carrito-compra btn-sm m-4" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              Iniciar Compra
+            </button>
           </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Completa tus datos</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Título o Autor..."
-                            aria-label="Search">
-                        <button class="btn btn-outline-success text-light btnfont botonsearch"
-                            type="submit">Buscar</button>
-                    </form>
+          <div class="modal-body">
+            <form id="formulario">
+              <!-- 2 column grid layout with text inputs for the first and last names -->
+              <div class="row mb-4">
+                <div class="col">
+                  <div class="form-outline">
+                    <input type="text" id="form3Example1" class="form-control" required />
+                    <label class="form-label" for="validationDefault01">Nombre</label>
+                  </div>
                 </div>
-            </div>
-        </nav>
+                <div class="col">
+                  <div class="form-outline">
+                    <input type="text" id="form3Example2" class="form-control" required />
+                    <label class="form-label" for="validationDefault02">Apellidos</label>
+                  </div>
+                </div>
+              </div>
 
-    </header>
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="email" id="form3Example3" class="form-control" required />
+                <label class="form-label" for="validationDefault03">Correo Electronico</label>
+              </div>
 
-        <h1 class="texto-centrado fades">Visítanos</h1>
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                <input type="text" id="form3Example4" class="form-control" required />
+                <label class="form-label" f for="validationDefault04">Dirección</label>
+              </div>
+              <!-- pago -->
+              <div class="centrar gap-5">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                    value="option1" required>
+                  <label class="form-check-label" for="inlineRadio1"><img src="images/webpay.png" class="imagencompra"
+                      alt="" for="validationDefault05"></label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                    value="option2" required>
+                  <label class="form-check-label" for="inlineRadio2"><img src="images/logo-Paypal.png"
+                      class="imagencompra" alt="" for="validationDefault05"></label>
+                </div>
+              </div>
 
-        <h2 class="texto-centrado m-3 title">Cómo llegar</h2>
+              <!-- Checkbox -->
+              <div class="form-check d-flex justify-content-center mb-4 mt-4">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+                <label class="form-check-label" for="form2Example33">
+                  ¡Suscríbete a nuestro boletín mensual!
+                </label>
+              </div>
+
+              <!-- Submit button -->
+              <div class="modal-footer centrar">
+                <!--  
+          <button type="button" class="btn btn-carrito-vaciar" data-bs-dismiss="modal">Cerrar</button> -->
+                <button type="submit" class="btn btn-dark" id="finalizar" data-dismiss="modal">Realizar Pedido</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="texto-centrado fades">Visítanos</h1>
+
+    <h2 class="texto-centrado m-3 title">Cómo llegar</h2>
 
     <section class="container">
-        <div class="row ">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <iframe class="iframemap"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.0702005953735!2d-70.61182878255616!3d-33.42141410000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf6631ec3e91%3A0x39deafbbad4138ab!2sEdificio%20Dos%20Caracoles!5e0!3m2!1ses!2scl!4v1654046123299!5m2!1ses!2scl"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+      <div class="row ">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <iframe class="iframemap"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.0702005953735!2d-70.61182878255616!3d-33.42141410000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf6631ec3e91%3A0x39deafbbad4138ab!2sEdificio%20Dos%20Caracoles!5e0!3m2!1ses!2scl!4v1654046123299!5m2!1ses!2scl"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="row ">
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                <h2 class="text-center mb-4">Contacta con nosotros</h2>
-                <div class="text-center">
-                    <form class="formlenght ">
+      </div>
+      <div class="row ">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <h2 class="text-center mb-4">Contacta con nosotros</h2>
+          <div class="text-center">
+            <form class="formlenght ">
 
-                        <div class="form-outline mb-4">
-                            <input type="text" id="form4Example1" class="form-control" />
-                            <label class="form-label" for="form4Example1">Nombre</label>
-                        </div>
+              <div class="form-outline mb-4">
+                <input type="text" id="form4Example1" class="form-control" />
+                <label class="form-label" for="form4Example1">Nombre</label>
+              </div>
 
-                        <div class="form-outline mb-4">
-                            <input type="email" id="form4Example2" class="form-control" />
-                            <label class="form-label" for="form4Example2">Correo</label>
-                        </div>
+              <div class="form-outline mb-4">
+                <input type="email" id="form4Example2" class="form-control" />
+                <label class="form-label" for="form4Example2">Correo</label>
+              </div>
 
-                        <div class="form-outline mb-4">
-                            <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-                            <label class="form-label" for="form4Example3">Preguntas o comentarios</label>
-                        </div>
+              <div class="form-outline mb-4">
+                <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                <label class="form-label" for="form4Example3">Preguntas o comentarios</label>
+              </div>
 
-                        <button type="submit" class="btn btn-dark mb-4 btnfont">Enviar</button>
-                    </form>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 fontcontact ">
-                <h2 class="mb-4"> Datos de contacto </h2>
-                <h3> One manga </h3>
-                <div>
-                    <i class="fa-solid fa-location-dot"></i></i> Dirección
-                    <p>Retiro en tienda: Calle Falsa 123, Providencia, Santiago.</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-phone"></i></i> Telefono
-                    <p> +56976671962 </p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-envelope"></i> Correo
-                    <p> Onemanga@gmail.com </p>
-                </div>
-
-            </div>
+              <button type="submit" class="btn btn-dark mb-4 btnfont">Enviar</button>
+            </form>
+          </div>
         </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 fontcontact ">
+          <h2 class="mb-4"> Datos de contacto </h2>
+          <h3> One manga </h3>
+          <div>
+            <i class="fa-solid fa-location-dot"></i></i> Dirección
+            <p>Retiro en tienda: Calle Falsa 123, Providencia, Santiago.</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-phone"></i></i> Telefono
+            <p> +56976671962 </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-envelope"></i> Correo
+            <p> Onemanga@gmail.com </p>
+          </div>
+
+        </div>
+      </div>
     </section>
+    <!-- Carrito localstorage -->
+    <div class="container">
+      <div class="row d-flex justify-content-center texto-centrado gap-4" id="cards"></div>
+      <template id="template-card">
+      </template>
+    </div>
 
 
     <footer class="text-center text-white mt-5 footer-color">
-        <div class="container p-4 pb-0">
-            <section class="mb-4">
-                <!-- Facebook -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button"><i
-                        class="fab fa-facebook-f"></i></a>
+      <div class="container p-4 pb-0">
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" role="button"><i
+              class="fab fa-facebook-f"></i></a>
 
-                <!-- Twitter -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button"><i
-                        class="fab fa-twitter"></i></a>
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button"><i
+              class="fab fa-twitter"></i></a>
 
-                <!-- Instagram -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"><i
-                        class="fab fa-instagram"></i></a>
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"><i
+              class="fab fa-instagram"></i></a>
 
-            </section>
-        </div>
-        <hr>
-        <div class="text-center p-3">
-            <p>OneManga@gmail.com | Calle falsa 123, Santiago</p>
-        </div>
+        </section>
+      </div>
+      <hr>
+      <div class="text-center p-3">
+        <p>OneManga@gmail.com | Calle falsa 123, Santiago</p>
+      </div>
     </footer>
-    <!-- javascript -->
+    <!-- javascript coderhouse -->
     <script src="app.js"></script>
+    <!-- bootstrap -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"> </script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
     </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"></script>
+    <script src="scripts.js"></script>
+    <!-- sweetalert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

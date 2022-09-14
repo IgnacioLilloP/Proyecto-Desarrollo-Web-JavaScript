@@ -1,37 +1,204 @@
-[
-    {
+[{
         "id": 1,
         "nombre": "Kaguya-sama",
-        "tomo" : "Tomo N°23",
+        "tomo": "Tomo N°23",
         "precio": 9990,
-        "imagen" : "images/index-1.webp"
+        "imagen": "images/index-1.webp"
     },
     {
         "id": 2,
         "nombre": "Vagabond",
-        "tomo" : "Tomo N°25",
+        "tomo": "Tomo N°25",
         "precio": 6990,
         "imagen": "images/index-2.webp"
     },
     {
         "id": 3,
         "nombre": "One Piece",
-        "tomo" : "Tomo N°100",
+        "tomo": "Tomo N°100",
         "precio": 11990,
-        "imagen":"images/index-3.webp"
+        "imagen": "images/index-3.webp"
     },
     {
         "id": 4,
         "nombre": "Jujutsu Kaisen",
-        "tomo" : "Tomo N°11",
+        "tomo": "Tomo N°11",
         "precio": 8990,
         "imagen": "images/index-4.webp"
     },
     {
         "id": 5,
         "nombre": "Kimi ni Todoke",
-        "tomo" : "Tomo N°30",
+        "tomo": "Tomo N°30",
         "precio": 9990,
         "imagen": "images/index-5.webp"
+    },
+    {
+        "id": 6,
+        "nombre": "Kimetsu no yaiba",
+        "tomo": "Tomo N°71",
+        "precio": 10990,
+        "imagen": "images/kimetsu.webp"
+    },
+    {
+        "id": 7,
+        "nombre": "JoJo Golden Wing",
+        "tomo": "Tomo N°55",
+        "precio": 10990,
+        "imagen": "images/Jojo.webp"
+    },
+    {
+        "id": 8,
+        "nombre": "Shingeki no Kyojin",
+        "tomo": "Tomo N°1",
+        "precio": 10990,
+        "imagen": "images/shingeki.webp"
+    },
+    {
+        "id": 9,
+        "nombre": "Tokyo Ghoul",
+        "tomo": "Tomo N°5",
+        "precio": 8990,
+        "imagen": "images/ghoul.webp"
+    },
+    {
+        "id": 10,
+        "nombre": "Tokyo revengers",
+        "tomo": "Tomo N°16",
+        "precio": 12990,
+        "imagen": "images/tokyo.webp"
+    },
+    {
+        "id": 11,
+        "nombre": "Mob Psycho 100",
+        "tomo": "Tomo N°1",
+        "precio": 8990,
+        "imagen": "images/mob.webp"
+    },
+    {
+        "id": 12,
+        "nombre": "Nichijou",
+        "tomo": "Tomo N°8",
+        "precio": 9990,
+        "imagen": "images/nichijou.webp"
+    },
+    {
+        "id": 13,
+        "nombre": "Osomatsu-san",
+        "tomo": "Tomo N°1",
+        "precio": 11990,
+        "imagen": "images/osomatsu.webp"
+    },
+    {
+        "id": 14,
+        "nombre": "Saiki Kusuo Psi",
+        "tomo": "Tomo N°46",
+        "precio": 8990,
+        "imagen": "images/saiki.webp"
+    },
+    {
+        "id": 15,
+        "nombre": "Gokushufudo",
+        "tomo": "Tomo N°7",
+        "precio": 10990,
+        "imagen": "images/yakuza.webp"
+    },
+    {
+        "id": 16,
+        "nombre": "Honey So Sweet",
+        "tomo": "Tomo N°8",
+        "precio": 13990,
+        "imagen": "images/honey.webp"
+    },
+    {
+        "id": 17,
+        "nombre": "After the Rain",
+        "tomo": "Tomo N°1",
+        "precio": 11990,
+        "imagen": "images/rain.webp"
+    },
+    {
+        "id": 18,
+        "nombre": "The Demon Prince",
+        "tomo": "Tomo N°10",
+        "precio": 9990,
+        "imagen": "images/demon.webp"
+    },
+    {
+        "id": 19,
+        "nombre": "Komi-san",
+        "tomo": "Tomo N°2",
+        "precio": 10990,
+        "imagen": "images/komisan.webp"
+    },
+    {
+        "id": 20,
+        "nombre": "Daily Butterfly",
+        "tomo": "Tomo N°12",
+        "precio": 15990,
+        "imagen": "images/daily-butterfly-12-de-12.webp"
+    },
+    {
+
+        "id": 21,
+        "nombre": "Spy x Family",
+        "tomo": "Tomo N°5",
+        "precio": 9990,
+        "imagen": "images/spyfamily.webp"
+
+    },
+    {
+
+        "id": 22,
+        "nombre": "Evangelion Finally",
+        "tomo": "Colored Vinyl, Pink",
+        "precio": 39990,
+        "imagen": "images/vinilo-1.webp"
+
+    },
+    {
+
+        "id": 23,
+        "nombre": "A Silent Voice",
+        "tomo": "Colored Vinyl, Blue",
+        "precio": 35990,
+        "imagen": "images/vinilo-3.webp"
+
+    },
+    {
+
+        "id": 24,
+        "nombre": "Death Note OST",
+        "tomo": "Colored Vinyl, Purple",
+        "precio": 45990,
+        "imagen": "images/vinilo-2.webp"
+
+    },
+    {
+
+        "id": 25,
+        "nombre": "Sakura Card Captor",
+        "tomo": "Blu-ray, Edición Coleccionista",
+        "precio": 150990,
+        "imagen": "images/sakura.webp"
+
+    },
+    {
+
+        "id": 26,
+        "nombre": "Your Name ",
+        "tomo": "Blu-ray, Edición Coleccionista",
+        "precio": 35990,
+        "imagen": "images/yourname.webp"
+
+    },
+    {
+
+        "id": 27,
+        "nombre": "Jujutsu Kaisen",
+        "tomo": "Blu-ray, Temporada 1",
+        "precio": 49990,
+        "imagen": "images/coleccion2.webp"
+
     }
-  ]
+]
